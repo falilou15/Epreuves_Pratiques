@@ -1,3 +1,4 @@
+#sujets : https://pixees.fr/informatiquelycee/term/suj_bac/index.html
 #Exercice 08.1 :
 
 def recherche(elt : int,tab : list) -> int:
