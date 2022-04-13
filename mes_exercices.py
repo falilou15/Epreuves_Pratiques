@@ -1,4 +1,5 @@
 #sujets : https://pixees.fr/informatiquelycee/term/suj_bac/index.html
+
 # Exercice 08.1 :
 
 def recherche(elt : int,tab : list) -> int:
@@ -27,3 +28,21 @@ def occurrences_mini(donnees : list) -> tuple:
         return 
 
 print(occurrences_mini([+13, +49, +13, +5]))
+
+# Maximum
+
+def maximum(nombres):
+    n = nombres[0]
+    for i in nombres :
+        if n < i :
+            n = i
+    return n
+
+# Indice de la première occurrence
+
+def indice(element, tableau):
+    n = None
+    for i in tableau :
+        if element == i :
+            n = tableau.index(i)
+    return n
