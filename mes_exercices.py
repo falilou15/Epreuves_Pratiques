@@ -46,3 +46,16 @@ def indice(element, tableau):
         if element == i :
             n = tableau.index(i)
     return n
+
+# valeur et indice du max
+
+def valeur_et_indice_du_max(valeurs):
+    if valeurs == []:
+        return(None,None)
+    ind = 0
+    nb = 0
+    for i in range(len(valeurs)) :
+        if nb < valeurs[i] :
+            nb = valeurs[i]
+            ind = i
+    return (nb,ind)
